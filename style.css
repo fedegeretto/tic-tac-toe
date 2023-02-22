@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #190280;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin: 3rem 0;
+}
+
+#contenedor-informacion{
+    background-color: #0c003fb4;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: none;
+}
+
+#contenedor-informacion h2{
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: .03rem;
+    margin: 1rem 0;
+}
+
+#contenedor-informacion button{
+    padding: .5rem 1.5rem;
+    background-color: #ebebeb;
+    font-size: .9rem;
+    letter-spacing: .02rem;
+    border-radius: .5rem;
+    border: none;
+    margin: .5rem 0;
+    cursor: pointer;
+}
+
+#contenedor-informacion button:hover{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.espacio{
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #ebebeb;
+    padding: 3rem;
+}
+
+.borde-abajo{
+    border-bottom: .3rem solid #ebebeb;
+}
+
+.borde-arriba{
+    border-top: .3rem solid #ebebeb;
+}
+
+.borde-costados{
+    border-right: .3rem solid #ebebeb;
+    border-left: .3rem solid #ebebeb;
+}
+
+.posiciones-ganadoras{
+    background-color: #0c003fb4;
+}
+
+.color-uno{
+    color: #E81224;
+}
+
+.color-dos{
+    color: #16c60c;
+}
+
+@media (min-width: 700px){
+    .espacio{
+        height: 8rem;
+        width: 8rem;
+        font-size: 4rem;
+    }
+}
